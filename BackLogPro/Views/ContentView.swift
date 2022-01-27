@@ -12,17 +12,17 @@ struct ContentView: View {
 		TabView {
 			LibraryView()
 				.tabItem {
-					Label("Library", systemImage: "cloud")
+					Label("Library", systemImage: "magazine.fill")
 				}
 			
 			PlayingView()
 				.tabItem {
-					Label("Playing", systemImage: "cloud")
+					Label("Playing", systemImage: "gamecontroller.fill")
 				}
 			
 			CompletedView()
 				.tabItem {
-					Label("Completed", systemImage: "cloud")
+					Label("Completed", systemImage: "crown.fill")
 				}
 		}// TabView
 	}
