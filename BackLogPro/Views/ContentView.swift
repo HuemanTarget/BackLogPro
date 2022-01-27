@@ -24,6 +24,11 @@ struct ContentView: View {
 				.tabItem {
 					Label("Completed", systemImage: "crown.fill")
 				}
+			
+			MessageBoardView()
+				.tabItem {
+					Label("Message Board", systemImage: "megaphone.fill")
+				}
 		}// TabView
 	}
 }
