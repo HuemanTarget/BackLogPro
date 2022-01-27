@@ -9,25 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
 	var body: some View {
-		ZStack {
-			TabView {
-				LibraryView()
-					.tabItem {
-						Label("Library", systemImage: "cloud")
-					}
-				
-				PlayingView()
-					.tabItem {
-						Label("Playing", systemImage: "cloud")
-					}
-				
-				CompletedView()
-					.tabItem {
-						Label("Completed", systemImage: "cloud")
-					}
-			}// TabView
-		}// ZStack
-		.background(.blue)
+		TabView {
+			LibraryView()
+				.tabItem {
+					Label("Library", systemImage: "cloud")
+				}
+			
+			PlayingView()
+				.tabItem {
+					Label("Playing", systemImage: "cloud")
+				}
+			
+			CompletedView()
+				.tabItem {
+					Label("Completed", systemImage: "cloud")
+				}
+		}// TabView
 	}
 }
 
